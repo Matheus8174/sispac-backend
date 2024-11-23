@@ -1,0 +1,7 @@
+### Get file
+PATCH http://localhost:3000/files/2c6db3af-ec72-4c03-9d31-2ec751e5215f.jpg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJlemlvODE3NEBnbWFpbC5jb20iLCJzdWJqZWN0IjoiNDkxODc2YzItZDZjMC00NmEzLWI1MWItMjRkZTdmOTEzY2ExIiwiaWF0IjoxNzMxNTMzOTU3LCJleHAiOjE3MzE1NDExNTd9.c7Es1XaWH6A7PMaPOerA-a32al2qF1vvrbz5emeP0PM
+
+### Get user avatar file
+GET  http://localhost:3000/files/avatar
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJlemlvODE3NEBnbWFpbC5jb20iLCJzdWJqZWN0IjoiNDkxODc2YzItZDZjMC00NmEzLWI1MWItMjRkZTdmOTEzY2ExIiwiaWF0IjoxNzMxNTMzOTU3LCJleHAiOjE3MzE1NDExNTd9.c7Es1XaWH6A7PMaPOerA-a32al2qF1vvrbz5emeP0PM

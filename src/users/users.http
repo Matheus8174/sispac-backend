@@ -1,0 +1,32 @@
+### List developers
+GET http://localhost:3000/users
+
+### Get an user
+GET http://localhost:3000/users/491876c2-d6c0-46a3-b51b-24de7f913ca1
+
+### Create an user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@email.com",
+  "password": "123456"
+}
+
+### Update an user
+PATCH http://localhost:3000/users/1
+
+### Delete an user
+DELETE http://localhost:3000/users/8a0226ef-5f95-492c-b603-cd2b644b2c89
+
+### Get user authenticated
+PATCH http://localhost:3000/users/authenticated
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJqb2huZG9lQGVtYWlsLmNvbSIsInN1YmplY3QiOiJhODJlNmE5NS0xYWE3LTQ2MjMtYWE1Zi0xODZhNDIxNmY1OWQiLCJpYXQiOjE3MzE0OTYwNjQsImV4cCI6MTczMTUwMzI2NH0.dNQv6Oo39H47NnP255EGSTOkP_ZeomHqzgkEj6V-eQs
+
+### Upload avatar file
+PATCH http://localhost:3000/users/avatar
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJqb2huZG9lQGVtYWlsLmNvbSIsInN1YmplY3QiOiJmYmU0Mjk3MC00NGNmLTQwYjItYWVlMC1lNDYyOWFjOTNlNzUiLCJpYXQiOjE3MzEyMDc0MzcsImV4cCI6MTczMTIwNzQ5N30.BfcvvTNrwYAkMd7xxefZa9vehHr-uheU6RBCih_fsFs
+Content-Disposition: form-data; name="image"; filename="1.png"
+Content-Type: image/png
+

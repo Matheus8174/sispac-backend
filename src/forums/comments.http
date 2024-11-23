@@ -1,0 +1,12 @@
+### create a comment to a specific forum
+POST http://localhost:3000/forums/comments
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJqb2huZG9lQGVtYWlsLmNvbSIsInN1YmplY3QiOiIwYThhNWIzYy02ZGIyLTQ3NzUtYWY1Ny1kYjJiZDMzOTc1NzIiLCJpYXQiOjE3MzIyOTI3OTYsImV4cCI6MTczMjI5OTk5Nn0._kL5tl0OvsD-4PuDsU6ca03YAbI7hJV34o6f-2PktuY
+Content-Type: application/json
+
+{
+  "content": "Obrigado pela contribuição!",
+  "forumId": 6
+}
+
+### list all comments from a specific forum
+GET http://localhost:3000/forums/6/comments

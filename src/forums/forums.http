@@ -1,0 +1,23 @@
+### list forums
+GET http://localhost:3000/forums
+
+### list forums by tags
+GET http://localhost:3000/forums/tags/?tags=Ação policial
+
+### list forums by city
+GET http://localhost:3000/forums/citys/2209971
+
+### get forum by id
+GET http://localhost:3000/forums/6
+
+### create forum
+POST http://localhost:3000/forums
+Content-Type: application/json
+
+{
+  "subject": "Assunto",
+  "content": "conteúdo",
+  "cityId": "2103208",
+  "userId": "0a8a5b3c-6db2-4775-af57-db2bd3397572",
+  "tags": ["Ação policial"]
+}

@@ -1,0 +1,19 @@
+### Create a complaint
+POST http://localhost:3000/complaints
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJqb2huZG9lQGVtYWlsLmNvbSIsInN1YmplY3QiOiJhODJlNmE5NS0xYWE3LTQ2MjMtYWE1Zi0xODZhNDIxNmY1OWQiLCJpYXQiOjE3MzEyNzYyNzQsImV4cCI6MTczMTI4MzQ3NH0.MJ1nC5hWHmRiPIEYm0Sx64qFT4CbUcygL0WrAjSWIAQ
+Content-Type: application/json
+
+{
+  "detail": "batida de carro",
+  "location": "rua 21"
+}
+
+### List complaints
+GET http://localhost:3000/complaints
+
+### List complaints
+GET http://localhost:3000/complaints?userId=d97d308f-699f-43d4-a8b4-83999ae18c11
+
+### Upload complaint images
+POST http://localhost:3000/complaints/images
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJqb2huZG9lQGVtYWlsLmNvbSIsInN1YmplY3QiOiJmYmU0Mjk3MC00NGNmLTQwYjItYWVlMC1lNDYyOWFjOTNlNzUiLCJpYXQiOjE3MzEyMDc3ODEsImV4cCI6MTczMTIwNzg0MX0.GmlzXmRhz-un-Cy4CXZgRM6iuJqCSrx62H4-rhGaDn4
